@@ -6,10 +6,16 @@
     <field name="inherit_id" ref="base.view_partner_form" />
     <field name="arch" type="xml">
         <!--Vista de Clientes-->
+      <field name="fax" position="after">
+         <field name="lbn_id" placeholder="I.D" />
+         <field name="lbn_nombre_cia" placeholder="Nombre CIA"/>
+      </field>
       <field name="category_id" position="after">
-        <field name="lb_rfc" placeholder="RFC" />
-        <field name="lb_razon_social" placeholder="Nombre o Razón Social" />
-        <field name="lb_domicilio_fiscal" placeholder="Domicilio Fiscal" />
+        <field name="lbn_rfc" placeholder="RFC" />
+        <field name="lbn_razon_social" placeholder="Nombre o Razón Social" />
+        <field name="lbn_domicilio_fiscal" placeholder="Domicilio Fiscal" />
+        <field name="lbn_cargo" placeholder="Cargo" />
+        <field name="lbn_giro" placeholder="Giro" />
       </field>
     </field>
   </record>
