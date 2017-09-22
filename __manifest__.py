@@ -10,6 +10,7 @@
     'depends': ['crm','sale'],
     'data': [
         'views/partner_custom_fields.xml',
+        'views/crm_custom_fields.xml'
     ],
     'installable': True,
 }

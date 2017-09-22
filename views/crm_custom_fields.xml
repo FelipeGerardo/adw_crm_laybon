@@ -1,11 +1,14 @@
 <?xml version="1.0" encoding="UTF-8" ?>
 <odoo>
   <record id="adw_custom_fields_crm" model="ir.ui.view">
-    <field name="name">AE Campos de Oportunidad</field>
+    <field name="name">LBN Campos de Oportunidad</field>
     <field name="model">crm.lead</field>
     <field name="inherit_id" ref="crm.crm_case_form_view_oppor" />
     <field name="arch" type="xml">
      <!--Vista de Oportunidad-->
+      <field name="team_id" position="after">
+         <field name="lbn_mat_interes" placeholder="Material de su interes" />
+      </field>
     </field>
   </record>
 </odoo>
