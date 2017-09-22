@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<odoo>
+  <record id="adw_view_partners_form_crm" model="ir.ui.view">
+    <field name="name">view.res.partner.form.crm.inherited1</field>
+    <field name="model">res.partner</field>
+    <field name="inherit_id" ref="base.view_partner_form" />
+    <field name="arch" type="xml">
+        <!--Vista de Clientes-->
+      <field name="category_id" position="after">
+        <field name="lb_rfc" placeholder="RFC" />
+        <field name="lb_razon_social" placeholder="Nombre o Razón Social" />
+        <field name="lb_domicilio_fiscal" placeholder="Domicilio Fiscal" />
+      </field>
+    </field>
+  </record>
+</odoo>
